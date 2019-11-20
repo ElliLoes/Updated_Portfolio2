@@ -81,7 +81,7 @@ body.fp-responsive .section {
   height: 100%;
   left: 0;
   top: 0;
-  background: url("../img/bg.jpg") no-repeat 50% 50%;
+  background: url("../img/bg_new.jpg") no-repeat 50% 50%;
   background-size: cover;
   z-index: -3;
   -webkit-filter: grayscale(1);
@@ -868,8 +868,8 @@ input:active, input:focus, input:hover, textarea:active, textarea:focus, textare
 /* About section */
 /* line 56, sass/components/_sections.sass */
 .section-about .person-img img {
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+  /* -webkit-filter: grayscale(1);
+          filter: grayscale(1); */
   width: 100%;
   height: auto;
 }
