@@ -224,45 +224,7 @@
     });
 
 
-    /* ---------------------------------------------
-     Portfolio gallery
-     --------------------------------------------- */
-    var $portfolioContainer = $(".portfolio-grid");
-    $portfolioContainer.magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        removalDelay: 500,
-        closeBtnInside: false,
-        showCloseBtn: false,
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1]
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function (item) {
-                return item.el.attr('title');
-            }
-        },
-        callbacks: {
-            beforeOpen: function () {
-                this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
-                this.st.mainClass = "mfp-zoom-in";
-            },
-            open: function () {
-                // disable fullpage.js scrolling
-                $.fn.fullpage.setAllowScrolling(false);
-            },
-            close: function () {
-                // enable fullpage.js scrolling
-                $.fn.fullpage.setAllowScrolling(true);
-            }
-        }
-    });
-
+  
 
     /* ---------------------------------------------
      Menu
